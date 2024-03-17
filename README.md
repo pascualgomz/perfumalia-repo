@@ -1,6 +1,6 @@
 # perfumalia-repo
 1. Clone repository: 
-git clone https://github.com/pascualgomz/taller1.git
+git clone https://github.com/pascualgomz/perfumalia-repo.git
 
 2. Create a virtual environment: 
 python -m venv env
