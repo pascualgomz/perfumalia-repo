@@ -13,8 +13,8 @@ Windows: env\Scripts\activate
 pip install -r requirements.txt
 
 5. Run database migrations: 
-python manage.py makemigrations
-python manage.py migrate
+python perfumalia/manage.py makemigrations
+python perfumalia/manage.py migrate
 
 6. Seed the database:
 python perfumalia/manage.py seed_users
