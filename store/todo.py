@@ -14,10 +14,44 @@
 #TODO: Edit-order - Muestra un formulario para editar orden. (autorrellenarse con la informacion ya almacenada) (Redireccionada desde la vista anteior) []
 
 
-#CLASES
+#CLASE PERFUME
 
-#TODO: Hacer la clase perfume [X]
-#TODO: Hacer clase shopingCart [X]
-#TODO: Hacer clase recommendation [X]
-#TODO: Hacer clase cartItem [X]
 
+#funciones
+
+#TODO: customizePerfume() No se sabe si se van a implementar
+#TODO: addIngredient() No se sabe si se van a implementar
+#TODO: removeIngredient() No se sabe si se van a implementar
+#TODO: getIngredient() No se sabe si se van a implementar
+#TODO: saveCustomization() No se sabe si se van a implementar
+
+
+
+
+# -----------------------------------------------------------------------------------------
+
+
+#CLASE Shoping Cart
+
+
+#funciones
+#TODO: saveForLater()
+#TODO: updateQuantity()
+#TODO: clearCart()
+#TODO: checkout()
+
+
+
+# --------------------------------------------------------------------
+
+#CLASE Recommendation
+
+#funciones
+#TODO: generateRecommendations()
+#TODO: updateProfile()
+#TODO: trackUser()
+#TODO: displayRecommendation()
+
+
+# --------------------------------------------------------------------
+#CLASE CartItem
