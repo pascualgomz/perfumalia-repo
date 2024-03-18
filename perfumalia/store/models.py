@@ -5,14 +5,14 @@ from django.db import models
 # Confirmar tratamiento de IDs
 
 class User(models.Model):
-    userID = models.CharField(primary_key=True, max_length=100)
+    userID = models.AutoField(primary_key=True)
     name = models.CharField(max_length=100)
     address = models.CharField(max_length=200)
     cellphoneNumber = models.CharField(max_length=20)
     dateOfBirth = models.DateField()
 
 class Order(models.Model):
-    orderID = models.CharField(primary_key=True, max_length=100)
+    orderID = models.AutoField(primary_key=True)
     userID = models.ForeignKey(User, on_delete=models.CASCADE)
     #orderItems = models.ManyToManyField(Product, through='OrderItem')
     orderStatus = models.CharField(max_length=50)
@@ -26,7 +26,7 @@ class OrderItem(models.Model):
     orderID = models.ForeignKey(Order, on_delete=models.CASCADE)
 
 class Payment(models.Model):
-    paymentID = models.CharField(primary_key=True, max_length=100)
+    paymentID = models.AutoField(primary_key=True)
     OrderID = models.ForeignKey(Order, on_delete=models.CASCADE)
     userID = models.ForeignKey(User, on_delete=models.CASCADE)
     amount = models.FloatField()
@@ -34,7 +34,7 @@ class Payment(models.Model):
     paymentDate = models.DateField()
 
 class Subscription(models.Model):
-    subscriptionID = models.CharField(primary_key=True, max_length=100)
+    subscriptionID = models.AutoField(primary_key=True)
     userID = models.ForeignKey(User, on_delete=models.CASCADE)
     subscriptionStatus = models.CharField(max_length=50)
     subscriptionPlan = models.CharField(max_length=100)
